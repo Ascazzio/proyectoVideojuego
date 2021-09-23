@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="author" content="Fabrizio Pironi">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NES (Fabrizio Pironi)</title>
     <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
@@ -31,7 +32,7 @@
 
                 <div id="marco_pantalla">
                     <div id="pantalla">
-                        <iframe src="https://duckhuntjs.com/" title="Duck Hunt"></iframe>
+                        <iframe style="display: none"  id="juego" src="https://duckhuntjs.com/" title="Duck Hunt"></iframe>
                     </div>
                 </div>
 
@@ -87,11 +88,11 @@
 
                     <div id="led"></div>
 
-                    <div class="boton_nes">
-                        <b><a href="">POWER</a></b>
+                    <div id="power" class="boton_nes">
+                        <b>POWER</b>
                     </div>
 
-                    <div class="boton_nes">
+                    <div class="boton_nes" onclick="#">
                         <b><p>RESET</p></b>
                     </div>
 
@@ -111,5 +112,7 @@
 
     </div>
 </div>
+
+<script src="/js/juego.js"></script>
 </body>
 </html>
