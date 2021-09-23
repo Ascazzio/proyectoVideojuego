@@ -2,6 +2,10 @@ body {
     margin: 0 0 0 0;
 }
 
+a{
+    text-decoration: none
+}
+
 /* Todo el televisor -------------------------------- */
 
 #contenedor_maestro_tv {
@@ -64,7 +68,7 @@ body {
 /* Bocina ------------------------------------------- */
 
 #bocina {
-    background-color: rgb(107, 107, 107);
+    background-color: black;
     width: 15%;
     height: 100%;
     border-style: solid;
@@ -178,21 +182,144 @@ body {
 
 #contenedor_maestro_nes {
     display: flex;
-    width: 100vw;
+    border-style: solid;
+    width: 99vw;
+    height: 30vh;
     justify-content: center;
+    align-items: center;
+    background-image: url(../img/rextura_madera2.jpg);
+
 }
 
 #contenedor_nes{
     display: flex;
-    height: 30vh;
-    width: 70vw;
+    height: 22vh;
+    width: 80vw;
     justify-content: center;
-    align-items: center;
-    background-color: pink;
+    align-items: flex-end;
+    border-style: solid;
+    background-color: lightblue;
 }
 
 #nes {
+    background-color: transparent;
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
+#tope_nes {
+    width: 310px;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 0 0 0;
+    border: solid 1px;
+}
+
+#cartucho {
+    border: solid 1px;
+    width: 200px;
+    height: 40px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+
+}
+
+#nintendo {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    height: 55px;
+}
+
+#fondo_nes {
+    border-right: 40px solid transparent;    
+    border-left: 40px solid transparent;
+    border-top: 55px solid gray;
+    height: 0px;
+    width: 230px;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
+
+.contenedor_linea {
+    display: flex;
+    width: 350px;
+    height: 125px;
+    background-color: transparent;
+
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+#linea {
     background-color: black;
-    width: 20px;
+    width: 50px;
+    height: 100%;
+    border: solid 1px;
+}
+
+#contenedor_botones_nes {
+    background-color: transparent;
+    width: 1060px;
+    height: 55px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#led {
+    width: 4px;
+    height: 4px;
+    border: solid 1px;
+    border-radius: 0px;
+    background: #ff0000;
+    box-shadow: inset 1px 1px 3px #660000,
+                inset -1px -1px 3px #ff0000;
+}
+
+.boton_nes {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    border: solid black 1px;
+    border-radius: 2px;
+    background: #a6a6a6;
+    box-shadow:  5px 5px 9px #424242,
+                -5px -5px 9px transparent;
+    margin: 0px 2px 0px 2px;
     height: 20px;
+    width: 30px;
+    color: red;
+    font-size: 7px;
+    padding: 0 0 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.boton_nes:hover {
+    background: #858585;
+    box-shadow: inset 17px 17px 23px #353535,
+                inset -17px -17px 23px #d5d5d5;
+    color: white;
+}
+
+#contenedor_mando{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: blue;
+
 }
