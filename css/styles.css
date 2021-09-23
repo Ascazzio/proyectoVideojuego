@@ -1,0 +1,198 @@
+body {
+    margin: 0 0 0 0;
+}
+
+/* Todo el televisor -------------------------------- */
+
+#contenedor_maestro_tv {
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+    width: 100vw;
+    height: 100%;
+}
+
+#madera {
+    margin-top: 2%;
+    display: flex;
+    height: 70vh;
+    width: 80vw;
+    background-image: url(../img/textura_madera.jpg);
+    background-repeat: repeat;
+    border-style: solid;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedor_pantalla {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#borde_amarillo {
+    background-color: yellow;
+    width: 95%;
+    height: 95%;
+    padding: 5px 5px 5px 5px;
+}
+
+#marco_pantalla {
+    display: flex;
+    background-color: black;
+    border-radius: 5px;
+    border-style: solid;
+    width: 70%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset -24px -24px 48px #000000,
+            inset 24px 24px 48px #696969;
+}
+
+#pantalla {
+    display: flex;
+    background-color: whitesmoke;
+    height: 90%;
+    width: 90%;
+    border-radius: 6px;
+    box-shadow: inset -28px -28px 56px #6a6a6a,
+                inset 28px 28px 56px #cecece;
+}
+
+/* Bocina ------------------------------------------- */
+
+#bocina {
+    background-color: rgb(107, 107, 107);
+    width: 15%;
+    height: 100%;
+    border-style: solid;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.rejilla {
+    background-color: black;
+    border-style: solid;
+    border-color: grey;
+    height: 99%;
+    width: auto;
+}
+
+/* Controles, botones y marca ----------------------- */
+
+#controles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: grey;
+    width: 15%;
+    height: 100%;
+    border-style: solid;
+    box-shadow: inset -6px -6px 12px #3f3f3f,
+            inset 6px 6px 12px #ffffff00;
+}
+
+#canales {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-color: yellow;
+    background-image: url(../img/textura_madera.jpg);
+    height: 25vh;
+    width: 8vw;
+    box-shadow:  7px 7px 8px #414040,
+             -7px -7px 8px rgba(128, 128, 128, 0);
+}
+
+#dial {
+    margin-top: 3px;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    border-style: solid;
+    height: 55px;
+    width: 55px;
+
+    border-radius: 50%;
+    background: #454545;
+    box-shadow:  7px 7px 8px #1c1c1c,
+             -7px -7px 8px #6e6e6e00;
+}
+
+#dial_interior {
+    display: flex;
+    justify-content: center;
+    border-color: black;
+    border-style: solid;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(58, 58, 58);
+}
+
+#barrita {
+    border-color: white;
+    border-style: solid;
+}
+
+#volumen {
+    display: flex;
+    justify-content: center;
+    border-color: black;
+    border-style: solid;
+    height: 25px;
+    width: 25px;
+
+    border-radius: 50%;
+    background: #454545;
+    box-shadow:  5px 5px 10px #1c1c1c,
+                -5px -5px 10px #6e6e6e00;
+}
+
+#botones {
+    margin-top: 3px;
+    display: flex;
+    border-style: solid;
+    border-color: yellow;
+    background-image: url(../img/textura_madera.jpg);
+    height: 25vh;
+    width: 8vw;
+}
+
+#marca {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    color: white;
+    height: 14vh;
+}
+
+/* Todo debajo del televisor ------------------------ */
+
+#contenedor_maestro_nes {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+#contenedor_nes{
+    display: flex;
+    height: 30vh;
+    width: 70vw;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+}
+
+#nes {
+    background-color: black;
+    width: 20px;
+    height: 20px;
+}
