@@ -6,6 +6,11 @@ a{
     text-decoration: none
 }
 
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
 /* Todo el televisor -------------------------------- */
 
 #contenedor_maestro_tv {
@@ -56,7 +61,7 @@ a{
 }
 
 #pantalla {
-    display: flex;
+    /* display: flex; */
     background-color: whitesmoke;
     height: 90%;
     width: 90%;
